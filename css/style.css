@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f0f4f8;
+    color: #222;
+    min-height: 100vh;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* ===== HEADER ===== */
+.app-header {
+    background: linear-gradient(135deg, #1a3fa8 0%, #2563eb 60%, #6d28d9 100%);
+    color: #fff;
+    text-align: center;
+    padding: 18px 16px 14px;
+    width: 100%;
+}
+
+.app-header h1 {
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.app-header p {
+    font-size: 0.8rem;
+    opacity: 0.85;
+    margin-top: 4px;
+}
+
+/* ===== LAYOUT ===== */
+.main-layout {
+    display: flex;
+    gap: 20px;
+    padding: 24px 28px;
+    align-items: flex-start;
+}
+
+/* ===== CARD SECTION (form) ===== */
+.card-section {
+    width: 280px;
+    flex-shrink: 0;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card-section h5 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 16px;
+}
+
+/* ===== FORM ===== */
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 4px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    color: #333;
+    background: #f9fafb;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+    background: #fff;
+}
+
+.form-group textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.btn-group {
+    margin-top: 4px;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+
+.content-panel {
+    flex: 1;
+    min-width: 0;
+}
+
+
+.filter-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tabs {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid #d1d5db;
+    background: #fff;
+    font-size: 0.8rem;
+    cursor: pointer;
+    color: #555;
+    transition: all 0.2s;
+}
+
+.tab-btn:hover {
+    background: #eff6ff;
+    border-color: #93c5fd;
+}
+
+.tab-btn.active {
+    background: #2563eb;
+    color: #fff;
+    border-color: #2563eb;
+}
+
+.total-badge {
+    background: #2563eb;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* ===== RECORD LIST ===== */
+.record-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ===== RECORD CARD (render bởi JS) ===== */
+.record-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px 18px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+    border-left: 4px solid #d1d5db;
+}
+
+.record-card[data-status="hoan-thanh"]      { border-left-color: #16a34a; }
+.record-card[data-status="dang-trien-khai"] { border-left-color: #f97316; }
+.record-card[data-status="chua-bat-dau"]    { border-left-color: #6b7280; }
+
+.card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 4px;
+}
+
+.card-title {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #1e3a8a;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 3px 11px;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.status-badge.hoan-thanh      { background: #dcfce7; color: #15803d; }
+.status-badge.dang-trien-khai { background: #ffedd5; color: #c2410c; }
+.status-badge.chua-bat-dau    { background: #f3f4f6; color: #374151; }
+
+.card-dvql {
+    font-size: 0.76rem;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.card-mota {
+    font-size: 0.8rem;
+    color: #444;
+    line-height: 1.55;
+}
+
+.card-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    justify-content: flex-end;
+}
+
+.btn-action {
+    padding: 5px 14px;
+    border-radius: 6px;
+    border: none;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn-action:hover { opacity: 0.8; }
+.btn-edit         { background: #eff6ff; color: #2563eb; }
+.btn-delete       { background: #fef2f2; color: #dc2626; }
+
+/* ===== EMPTY STATE ===== */
+.empty-state {
+    text-align: center;
+    padding: 50px 20px;
+    color: #9ca3af;
+    font-size: 0.88rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 700px) {
+    .main-layout {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .card-section {
+        width: 100%;
+    }
+}

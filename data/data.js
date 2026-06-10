@@ -1,0 +1,51 @@
+const records = [
+  {
+    id: 1,
+    tenTruong: "Trường THPT Nguyễn Huệ",
+    donViQuanLy: "Phòng GD&ĐT TP. Thủy Lợi",
+    trangThai: "hoan-thanh",
+    moTaTienDo: "Hoàn thành chuyển đổi số toàn diện; hệ thống quản lý học tập LMS, phần mềm quản lý hành chính, chữ ký số, và hạ tầng mạng WiFi campus.",
+  },
+  {
+    id: 2,
+    tenTruong: "Trường THCS Lý Quý Đôn",
+    donViQuanLy: "Phòng GD&ĐT H. Thủy Nguyên",
+    trangThai: "dang-trien-khai",
+    moTaTienDo: "Đang triển khai phần mềm quản lý hồ sơ bằng điện tử và hệ thống camera giám sát lớp học. Đã hoàn thành 60%.",
+  },
+  {
+    id: 3,
+    tenTruong: "Trường THPT Trần Phú",
+    donViQuanLy: "Phòng GD&ĐT Q. Hồng Bàng",
+    trangThai: "chua-bat-dau",
+    moTaTienDo: "Chưa bắt đầu chuyển đổi số. Đang chờ kế hoạch và nguồn kinh phí từ Sở Giáo dục.",
+  },
+  {
+    id: 4,
+    tenTruong: "Trường THCS Nguyễn Tri Phương",
+    donViQuanLy: "Phòng GD&ĐT TP. Thủy Lợi",
+    trangThai: "dang-trien-khai",
+    moTaTienDo: "Đang triển khai hệ thống họp trực tuyến và phần mềm quản lý điểm số học sinh. Tiến độ đạt 45%.",
+  },
+  {
+    id: 5,
+    tenTruong: "Trường Tiểu học Lê Hồng Phong",
+    donViQuanLy: "Phòng GD&ĐT Q. Ngô Quyền",
+    trangThai: "hoan-thanh",
+    moTaTienDo: "Đã hoàn thành lắp đặt bảng tương tác thông minh toàn bộ phòng học và triển khai ứng dụng liên lạc phụ huynh.",
+  },
+  {
+    id: 6,
+    tenTruong: "Trường THPT Lê Quý Đôn",
+    donViQuanLy: "Phòng GD&ĐT Q. Lê Chân",
+    trangThai: "chua-bat-dau",
+    moTaTienDo: "Đang trong giai đoạn khảo sát nhu cầu và lập dự toán ngân sách cho dự án chuyển đổi số.",
+  },
+  {
+    id: 7,
+    tenTruong: "Trường THCS Trưng Vương",
+    donViQuanLy: "Phòng GD&ĐT Q. Hồng Bàng",
+    trangThai: "dang-trien-khai",
+    moTaTienDo: "Triển khai phần mềm kế toán trường học và hệ thống thư viện điện tử. Đang chạy thử nghiệm với 3 lớp pilot.",
+  },
+];

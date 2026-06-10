@@ -11,13 +11,13 @@ body {
     min-height: 100vh;
 }
 
-/* ===== CONTAINER ===== */
+
 .container {
     max-width: 100%;
     margin: 0 auto;
 }
 
-/* ===== HEADER ===== */
+
 .app-header {
     background: linear-gradient(135deg, #1a3fa8 0%, #2563eb 60%, #6d28d9 100%);
     color: #fff;
@@ -37,7 +37,7 @@ body {
     margin-top: 4px;
 }
 
-/* ===== LAYOUT ===== */
+
 .main-layout {
     display: flex;
     gap: 20px;
@@ -45,7 +45,7 @@ body {
     align-items: flex-start;
 }
 
-/* ===== CARD SECTION (form) ===== */
+
 .card-section {
     width: 280px;
     flex-shrink: 0;
@@ -62,7 +62,7 @@ body {
     margin-bottom: 16px;
 }
 
-/* ===== FORM ===== */
+
 .form-group {
     margin-bottom: 12px;
 }
@@ -175,25 +175,25 @@ body {
     font-weight: 600;
 }
 
-/* ===== RECORD LIST ===== */
+
 .record-list {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-/* ===== RECORD CARD (render bởi JS) ===== */
+
 .record-card {
     background: #fff;
     border-radius: 10px;
     padding: 16px 18px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
-    border-left: 4px solid #d1d5db;
+    border-top: 4px solid #d1d5db;
 }
 
-.record-card[data-status="hoan-thanh"]      { border-left-color: #16a34a; }
-.record-card[data-status="dang-trien-khai"] { border-left-color: #f97316; }
-.record-card[data-status="chua-bat-dau"]    { border-left-color: #6b7280; }
+.record-card[data-status="hoan-thanh"]      { border-top-color: #198754; }
+.record-card[data-status="dang-trien-khai"] { border-top-color: #FD7E14; }
+.record-card[data-status="chua-bat-dau"]    { border-top-color: #6C757D; }
 
 .card-top {
     display: flex;
@@ -230,6 +230,7 @@ body {
 
 .card-mota {
     font-size: 0.8rem;
+    font-family:"Segoe UI", Arial, sans-serif; ;
     color: #444;
     line-height: 1.55;
 }
